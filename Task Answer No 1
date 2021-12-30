@@ -1,0 +1,3 @@
+get transaction value on the screen, then set the transaction id as a variable, lets say 'trxid' then put the variable as a parameter on query (SELECT ADDRESS_SHIP, DATE_ORDER,SELLER_NAME,DELIVERY_SERVICE FROM table_name WHERE TRX_ID='$trxid'. after all the preparation is done, then you can assert the page object value using query result.
+if page object value != value query result then print "Data tidak sesuai"
+if page object value == value query result then print "Data sesuai"
