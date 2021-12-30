@@ -1,0 +1,6 @@
+// test using postman test script
+pm.test("total is valid", function() {
+ pm.response.to.have.status(200) // assert response code 
+ pm.expect(pm.response.total).to.eql(52000000); // assert response total value
+ pm.expect(pm.responseJson.orderNumber).to.be.a('integer'); // assert response orderNumber data type
+}
